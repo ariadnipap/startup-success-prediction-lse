@@ -1,10 +1,10 @@
-# 🚀 Predicting Startup Success Using Machine Learning
+# Predicting Startup Success Using Machine Learning
 **LSE Data Science Society Project (Autumn 2025)**  
 **Project Lead:** Ariadni Papanikolaou  
 
 ---
 
-## 📘 Overview
+## Overview
 This project aims to build a predictive machine learning model that estimates a startup’s likelihood of success using publicly available business and funding data from Kaggle.  
 By analyzing features such as founding year, total funding, location, and industry, the goal is to identify the most influential factors driving startup outcomes (success, acquisition, or closure).
 
@@ -13,7 +13,7 @@ By analyzing features such as founding year, total funding, location, and indust
 
 ---
 
-## 🧠 Objectives
+## Objectives
 - Clean and preprocess a real-world dataset of 48,000+ startups  
 - Engineer and select meaningful predictive features  
 - Build and evaluate classification models (Logistic Regression, Random Forest, XGBoost)  
@@ -22,27 +22,33 @@ By analyzing features such as founding year, total funding, location, and indust
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 ```
 startup-success-prediction-lse/
 │
 ├── data/
-│   ├── raw/          # Original dataset from Kaggle
-│   ├── cleaned/      # Cleaned dataset (Week 2)
-│   └── processed/    # Feature-engineered dataset
+│   ├── raw/              # Original dataset from Kaggle
+│   ├── cleaned/          # Cleaned dataset (Week 2)
+│   └── processed/        # Feature-engineered dataset
 │
-├── notebooks/
-│   ├── week2_cleaning.ipynb
-│   ├── week2_features.ipynb
-│   └── week2_visuals.ipynb
+├── scripts/
+│   ├── week2_cleaning.py     # Data cleaning logic (missing values, types, duplicates)
+│   ├── week2_features.py     # Feature selection & encoding
+│   └── week2_visuals.py      # Exploratory data analysis & visualizations
 │
-├── docs/             # Literature review, weekly notes, results
-└── README.md
+├── weekly_tasks/
+│   └── week2_tasks.md        # Detailed task plan for Week 2
+│
+├── docs/                     # Literature review, meeting notes, plots, reports
+│
+├── requirements.txt          # Python dependencies
+└── README.md                 # Project overview, workflow, and structure
+
 ```
 
 ---
 
-## 🧩 Weekly Timeline
+## Weekly Timeline
 
 | Week | Focus | Main Deliverables |
 |------|--------|-------------------|
@@ -55,23 +61,21 @@ startup-success-prediction-lse/
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 - **Python** (pandas, NumPy, scikit-learn, XGBoost, matplotlib, seaborn, SHAP)  
-- **Google Colab** for cloud-based coding and collaboration  
 - **GitHub** for version control and documentation  
 - **Streamlit (optional)** for final dashboard visualization  
 
 ---
 
-## 🤝 Team Guidelines
-- Work on your assigned notebook first before editing others’.  
-- Always add clear commit messages.  
-- If you’re unsure about GitHub, share your Colab notebook link with Ariadni to upload manually.  
+## Team Guidelines
+- Work on your assigned code first before editing others’.  
+- Always add clear commit messages.   
 - Weekly syncs will be used to review progress and merge work.
 
 ---
 
-## 🧾 Notes
+## Notes
 This repository will evolve each week as we build, evaluate, and document our progress.  
 All contributions, analyses, and visualizations will be integrated into the final project report.
 
