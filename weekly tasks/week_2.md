@@ -19,7 +19,7 @@
 | Member | File | Responsibilities | Deliverables |
 |---------|------|------------------|---------------|
 | **Developer 1 – [Lan]** | `scripts/week2_cleaning.py` | - Load and inspect raw CSV<br>- Identify & handle missing values<br>- Fix data types, duplicates, and categorical inconsistencies<br>- Export cleaned data to `/data/cleaned/cleaned_startups.csv` | • Cleaned CSV<br>• Short list of cleaning steps performed |
-| **Developer 2 – [Name]** | `scripts/week2_features.py` | - Select relevant columns<br>- Encode categorical variables (LabelEncoder / One-Hot)<br>- Normalize or scale if needed<br>- Export processed data to `/data/processed/feature_startups.csv` | • Processed CSV<br>• Notes on chosen features & encoding approach |
+| **Developer 2 – [Robert]** | `scripts/week2_features.py` | - Select relevant columns<br>- Encode categorical variables (LabelEncoder / One-Hot)<br>- Normalize or scale if needed<br>- Export processed data to `/data/processed/feature_startups.csv` | • Processed CSV<br>• Notes on chosen features & encoding approach |
 | **Developer 3 – [Name]** | `scripts/week2_visuals.py` | - Produce at least 3 visualizations (status distribution, funding histograms, correlations, etc.)<br>- Write short markdown summary of insights<br>- Save plots to `/docs/` | • `.png` plots<br>• 1-paragraph EDA summary |
 
 ---
