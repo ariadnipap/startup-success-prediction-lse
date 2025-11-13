@@ -78,28 +78,34 @@ Both models list their top features of importance:
 
 ### Logistic Regression:
 Top positive features (increase success probability):
-has_roundD                       0.866
-is_top500                        0.760
-milestones                       0.715
-is_MA                            0.675
-is_biotech                       0.564
-is_enterprise                    0.457
-is_NY                            0.415
-avg_participants                 0.316
-has_roundC                       0.249
-age_first_milestone_year         0.229
+| Feature                     | Coefficient |
+|-----------------------------|-------------|
+| has_roundD                  | 0.866       |
+| is_top500                   | 0.760       |
+| milestones                  | 0.715       |
+| is_MA                       | 0.675       |
+| is_biotech                  | 0.564       |
+| is_enterprise               | 0.457       |
+| is_NY                       | 0.415       |
+| avg_participants            | 0.316       |
+| has_roundC                  | 0.249       |
+| age_first_milestone_year    | 0.229       |
+
 
 Top negative features (decrease success probability):
-is_web                          -0.055
-is_mobile                       -0.139
-age_first_funding_year          -0.172
-is_otherstate                   -0.194
-has_angel                       -0.208
-is_gamesvideo                   -0.212
-is_consulting                   -0.242
-has_VC                          -0.248
-is_TX                           -0.273
-is_ecommerce                    -0.738
+| Feature                     | Coefficient |
+|-----------------------------|-------------|
+| is_web                      | -0.055      |
+| is_mobile                   | -0.139      |
+| age_first_funding_year      | -0.172      |
+| is_otherstate               | -0.194      |
+| has_angel                   | -0.208      |
+| is_gamesvideo               | -0.212      |
+| is_consulting               | -0.242      |
+| has_VC                      | -0.248      |
+| is_TX                       | -0.273      |
+| is_ecommerce                | -0.738      |
+
 
 ### Random Forest
 ![Top-15-features-rf](rf_feature_importance.png)
