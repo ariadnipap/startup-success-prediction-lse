@@ -29,10 +29,10 @@ Since this is the positive class, we focus primarily on **precision**, **recall*
 
 ### 2.1 Confusion Matrix
 For Logistic Regression:
-![Confusion Matrix for lr](..\docs\logreg_confusion_matrix.png)
+![Confusion Matrix for lr](startup-success-prediction-lse\docs\logreg_confusion_matrix.png)
 
 For Random Forest:
-![Confusion Matrix for rf](..\docs\rf_confusion_matrix.png)
+![Confusion Matrix for rfstartup-success-prediction-lse\docs\rf_confusion_matrix.png)
 
 
 ### 2.2 Mrtrics comparison
@@ -55,7 +55,7 @@ Based on the confusion matrices, the following metrices are calculated:
 
 A bar chart comparing the Accuracy, Precision, Recall, and F1-score of both models:
 
-![model comparison](..\docs\model_comparison.png)
+![model comparison](startup-success-prediction-lse\docs\model_comparison.png)
 
 ---
 
@@ -102,7 +102,7 @@ is_TX                           -0.273
 is_ecommerce                    -0.738
 
 ### Random Forest
-![Top-15-features-rf](..\docs\model_comparison.png)
+![Top-15-features-rf](startup-success-prediction-lse\docs\model_comparison.png)
 
 ### Any insights?
 - Both models agree that funding history (rounds, participants, milestones) is highly predictive of success.
@@ -119,5 +119,3 @@ Based on F1-score, recall, and overall accuracy,
 It should be preferred if the goal is maximizing correct identification of successful startups.
 
 Logistic Regression remains useful for interpretability and coefficient analysis, but Random Forest provides better predictive performance for this task.
-
----
