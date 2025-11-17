@@ -1,6 +1,14 @@
 {
  "cells": [
   {
+   "cell_type": "markdown",
+   "id": "b32b7a48",
+   "metadata": {},
+   "source": [
+    "# NB01 Week 2 Step 1: Data Cleaning  - Lan"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 5,
    "id": "4c4a4e82-7e52-4ac8-9706-ae74952eeebe",
