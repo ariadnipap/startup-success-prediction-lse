@@ -1,0 +1,11 @@
+XGBoost Tuned Model Report
+============================
+
+Accuracy:  0.7405
+Precision: 0.7687
+Recall:    0.8583
+F1 Score:  0.8110
+
+Confusion Matrix:
+[[ 34  31]
+ [ 17 103]]
