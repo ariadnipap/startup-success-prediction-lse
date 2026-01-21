@@ -5,81 +5,100 @@
 ---
 
 ## Overview
-This project aims to build a predictive machine learning model that estimates a startup’s likelihood of success using publicly available business and funding data from Kaggle.  
-By analyzing features such as founding year, total funding, location, and industry, the goal is to identify the most influential factors driving startup outcomes (success, acquisition, or closure).
+This project develops an end-to-end machine learning pipeline to predict startup success using publicly available business and funding data from Kaggle.  
+Startup success is defined as a positive exit (acquisition or IPO), while failure corresponds to company closure.
 
-**Dataset:** [Startup Success Prediction Dataset](https://www.kaggle.com/datasets/manishkc06/startup-success-prediction)  
-**Source:** Kaggle (CC0 Public Domain License)
+By analysing features such as funding history, milestone progression, company age, and industry indicators, the project aims to both:
+1. **Accurately predict startup outcomes**, and  
+2. **Provide interpretable insights** into the key drivers of success.
+
+The emphasis is not only on predictive performance, but also on explainability and practical relevance for decision-making contexts such as venture capital and startup evaluation.
+
+**Dataset:** Startup Success Prediction Dataset (Kaggle, CC0 License)
 
 ---
 
-## Objectives
-- Clean and preprocess a real-world dataset of 48,000+ startups  
+## Project Objectives
+- Clean and preprocess a real-world startup dataset  
 - Engineer and select meaningful predictive features  
-- Build and evaluate classification models (Logistic Regression, Random Forest, XGBoost)  
-- Analyze feature importance and model interpretability (using SHAP)  
-- Visualize insights through exploratory data analysis and results dashboards  
+- Train and evaluate multiple classification models  
+- Compare model performance using standard evaluation metrics  
+- Interpret model behaviour using SHAP explainability techniques  
+- Communicate results through clear visualisations and reporting  
 
 ---
 
-## Repository Structure
-```
-startup-success-prediction-lse/
-│
-├── data/
-│   ├── raw/              # Original dataset from Kaggle
-│   ├── cleaned/          # Cleaned dataset (Week 2)
-│   └── processed/        # Feature-engineered dataset
-│
-├── scripts/
-│   ├── week2_cleaning.py     # Data cleaning logic (missing values, types, duplicates)
-│   ├── week2_features.py     # Feature selection & encoding
-│   └── week2_visuals.py      # Exploratory data analysis & visualizations
-│
-├── weekly_tasks/
-│   └── week2_tasks.md        # Detailed task plan for Week 2
-│
-├── docs/                     # Literature review, meeting notes, plots, reports
-│
-├── requirements.txt          # Python dependencies
-└── README.md                 # Project overview, workflow, and structure
+## Methodology Summary
 
-```
+### Data Preparation
+- Removed identifiers and non-informative fields  
+- Handled missing values and inconsistencies  
+- Encoded categorical variables into numeric representations  
+- Constructed a fully numeric, modeling-ready dataset  
+
+### Modeling
+The following models were trained and evaluated:
+- **Logistic Regression** (linear baseline)
+- **Random Forest** (non-linear baseline)
+- **XGBoost** (gradient boosting, baseline and tuned)
+
+Models were evaluated using:
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion matrices
+
+### Interpretability
+To ensure transparency, SHAP (SHapley Additive exPlanations) was applied to the final XGBoost model to:
+- Identify globally important features
+- Analyse how individual features influence predictions
+- Validate whether learned patterns align with domain intuition
 
 ---
 
-## Weekly Timeline
+## Key Findings
+- Tree-based models (Random Forest and XGBoost) significantly outperformed Logistic Regression, indicating strong non-linear relationships in the data.
+- XGBoost achieved the best overall balance across evaluation metrics.
+- Milestone progression, funding history, and company longevity emerged as the strongest predictors of success.
+- SHAP analysis confirmed intuitive patterns, such as diminishing returns on funding and the importance of sustained progress over time.
 
-| Week | Focus | Main Deliverables |
-|------|--------|-------------------|
-| **1** | Literature Review & Dataset Exploration | Review of startup analytics + dataset inspection |
-| **2** | Data Cleaning, Feature Selection, EDA | Cleaned data, engineered features, visual insights |
-| **3** | Baseline Modeling | Logistic Regression, Random Forest |
-| **4** | Model Tuning & Interpretability | XGBoost optimization, SHAP feature analysis |
-| **5** | Evaluation & Visualization | Metrics, plots, comparison of models |
-| **6** | Final Report & Presentation | Summary, visual dashboard (optional Streamlit) |
+---
+
+## Project Timeline
+
+| Week | Focus |
+|------|------|
+| 1 | Literature review & dataset exploration |
+| 2 | Data cleaning, feature selection, exploratory analysis |
+| 3 | Baseline modeling (Logistic Regression, Random Forest) |
+| 4 | Advanced modeling & interpretability (XGBoost, SHAP) |
+| 5 | Evaluation, comparison & visualization |
+| 6 | Final report & presentation |
 
 ---
 
 ## Tech Stack
-- **Python** (pandas, NumPy, scikit-learn, XGBoost, matplotlib, seaborn, SHAP)  
-- **GitHub** for version control and documentation  
-- **Streamlit (optional)** for final dashboard visualization  
+- **Python**: pandas, NumPy, scikit-learn, XGBoost  
+- **Visualization**: matplotlib, seaborn  
+- **Interpretability**: SHAP  
+- **Version Control & Collaboration**: GitHub  
 
 ---
 
-## Team Guidelines
-- Work on your assigned code first before editing others’.  
-- Always add clear commit messages.   
-- Weekly syncs will be used to review progress and merge work.
+## Team & Collaboration
+This project was completed collaboratively as part of the LSE Data Science Society.  
+Work was organised through weekly task plans, version-controlled scripts, and regular sync meetings to review progress and align on next steps.
 
 ---
 
-## Notes
-This repository will evolve each week as we build, evaluate, and document our progress.  
-All contributions, analyses, and visualizations will be integrated into the final project report.
+## Final Outputs
+- Fully documented machine learning pipeline  
+- Comparative evaluation of multiple models  
+- Interpretable insights into startup success drivers  
+- Final written report and presentation materials  
 
 ---
 
 **LSE Data Science Society – Predicting Startup Success Project**  
-© 2025 | Ariadni Papanikolaou and Project Team
+© 2025 | Ariadni Papanikolaou, Robert Chen, Lan Nguy, Cathy Yang
